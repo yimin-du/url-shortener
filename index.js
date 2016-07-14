@@ -25,7 +25,7 @@ app.get('/:param', (req, res) => {
 				db.close();
 
 				// return { "original_url": param, "shortened_url": shortUrl }
-				var shortUrl = "http://localhost:8080/" + id;
+				var shortUrl = "https://short-my-url.herokuapp.com/" + id;
 				res.send({
 					"original_url": param, 
 					"shortened_url": shortUrl
