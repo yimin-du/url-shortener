@@ -6,7 +6,7 @@ var mongoClient = mongodb.MongoClient;
 var dburl = process.env.MONGO_URI;
 
 app.get('/', (req, res) => {
-	res.sendFile('./public/index.html');
+	res.sendFile('/public/index.html');
 });
 
 app.get('/:param', (req, res) => {
