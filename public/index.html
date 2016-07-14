@@ -14,7 +14,7 @@
 
 <body>
     <div class="container-fluid">
-        <h1 class="header">FreeCodeCamp API Basejump: URL Shortener Microservice</h1>
+        <h1 class="header">FreeCodeCamp Project: URL Shortener Microservice</h1>
         <blockquote>
             <p>User stories:</p>
             <ul>
@@ -23,14 +23,16 @@
             </ul>
         </blockquote>
         <h3>Example creation usage:</h3>
-        <code>https://little-url.herokuapp.com/new/https://www.google.com</code>
+        <code>https://short-my-url.herokuapp.com/www.google.com</code>
         <br/>
-        <code>https://little-url.herokuapp.com/new/http://foo.com:80</code>
+        <code>https://short-my-url.herokuapp.com/www.foo.com</code>
         <h3>Example creation output</h3><code>{
-					"original_url":"http://foo.com:80",
-					"short_url":"https://little-url.herokuapp.com/8170"
+					"original_url":"www.foo.com",
+					"short_url":"https://short-my-url.herokuapp.com/9241"
 				}</code>
-        <h3>Usage:</h3><code>https://little-url.herokuapp.com/2871</code>
-        <h3>Will redirect to:</h3><code>https://www.google.com/</code>
+        <h3>Usage:</h3>
+        <code>https://short-my-url.herokuapp.com/9241</code>
+        <h3>Will redirect to:</h3>
+        <code>www.foo.com/</code>
     </div>
 </body>
