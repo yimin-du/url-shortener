@@ -5,6 +5,10 @@ var mongodb = require('mongodb');
 var mongoClient = mongodb.MongoClient;
 var dburl = process.env.MONGO_URI;
 
+app.get('/', (req, res) => {
+	res.send('./public/index.html');
+});
+
 app.get('/:param', (req, res) => {
 	var param = req.params.param;
 	if(isNaN(param)) {
